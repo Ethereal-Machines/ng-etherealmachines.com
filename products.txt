@@ -1,0 +1,66 @@
+	For the products & services page :
+
+//
+
+1) Ethereal Atom : A sturdy 1ft x 1ft Router that helps you in etching out intricate designs on small work pieces.
+
+
+2) Ethereal Compact : A 3ft x 2ft machine with an option of being operated by a single phase power supply. 
+
+
+3) Ethereal Brawn : A 4ft x 8ft machine for heavy industrial usage and life-size workpieces.
+
+//
+
+The read more in each of them will contain this :
+
+//
+
+1) Ethereal Atom :
+
+Ethereal Atom has the following features : 
+
+* High precision stepper motors with micro-step drive 
+* Precision ball-screw for axis drive 
+* Precision : 0.005mm
+* Traverse speed : 2000mm/min  
+* A robust 1kW spindle,
+* Desk top mounted 
+* High strength aluminium alloy structure for light weight and protability
+* The USB control feature allows the user to control the machine using a laptop.
+* Low noise machine 
+* Ideal for students/hobbyists/companies in prototyping components and converting their imagination into reality.
+* Stop and GO feature - foolproof mechanism to ensure continuity in work in the event of a power cut. 
+
+
+2) Ethereal Compact : 
+
+Ethereal Compact comes equipped with:
+
+* A heavy duty stepper/servo drive. 
+* Precision: 0.02mm   
+* Variable speed high frequency Spindle of 1kW or 3kW capacity. 
+* High strength aluminium and steel structure 
+* Dual drive for y-axis 
+* Traverse speed upto 12000mm/min. 
+* Axis drive is achieved by rack & pinion or ball-screw. 
+* Stand-alone machine with powerful processor. 
+* Centralized lubrication
+* Stop and GO feature - foolproof mechanism to ensure continuity in work in the event of a power cut. 
+
+3) Ethereal Brawn 
+   
+ The Ethereal Brawn features :
+
+* A heavy duty stepper/servo drive. 
+* Precision: 0.02mm   
+* Variable speed high frequency Spindle of 3kW or 6 kW capacity. 
+* High strength aluminium and steel structure 
+* Dual drive for y-axis 
+* Traverse speed upto 12000mm/min. 
+* Axis drive is achieved by rack & pinion for X and Y axes and ball-screw for Z-axis. 
+* Stand-alone machine with powerful processor. 
+* Centralized lubrication
+* Stop and GO feature - foolproof mechanism to ensure continuity in work in the event of a power cut. 
+
+//

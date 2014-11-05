@@ -1,0 +1,49 @@
+Througout the note, only the content within //....// has to be uploaded on the website.
+
+
+For the changing slides with quotations, use the following three quotes :
+
+//
+
+1) Our machines are built to cater to your specific requirements. - Navin Jain - Technical Head
+
+2) We are a pioneer in building cost effective CNC Routers - Kaushik Mudda - Business Head
+
+3) We provide an array of financial schemes to help you purchase your CNC Router -  Shashank Nayak - Head Manager
+ 
+//
+
+
+
+
+We can keep the four options though we dont need the read more section here. I have described them underneath :
+
+// 
+
+A. Precise and Versatile: Our machine can etch intricate design on wood, plastic, marble, granite, MDF, 
+acrylic etc., with a fine precision of upto 0.2mm.
+
+
+B. Portability : The size and ease of installment of our machines facilitate easy transportation and usage.
+
+
+c. Customizability : Your choice, our build. Our Engineers build machines of various sizes, power and functionality to suit your need. 
+
+
+D. Single phase operability : Our engineers have designed the electronics to enable installation almost 
+anywhere through a single phase supply.
+
+//
+
+
+This will go in the "Welcome, dear visitor" section :
+
+//
+
+We at Ethereal Machines specialize in manufacturing CNC Routers. Based out of Bangalore, India; our clientele is 
+spread across India.
+ EThereal Machines caters to woodworking, jewelry, interior designing and signage industries. Our machines are also 
+used in plastic and aluminium fabrication, granite & marble engraving, PCB etching amongst others.
+
+//
+

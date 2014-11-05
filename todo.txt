@@ -1,0 +1,11 @@
+Preloading the Menu hover icons.
+Gallery L image loading should show the images after centering only.
+Products page images of lower resolution, and show the L image as in Gallery page.
+Ethereal logo on every page is stretched too far and does not mix well with the background - Correct that.
+Font size of the info on the four "Features" in the Home page, should be lowered
+Home page slideshow should match with its background.
+Create a sitemap for the website.
+Correct the emails on every page and Contacts page.
+Try to prevent screen flashing while switching pages.
+Change the tagline under Gallery under Menu.
+Add favicon for every page.
