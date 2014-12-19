@@ -13,6 +13,17 @@
 <script type="text/javascript" src="js/jquery-ui.js" ></script>
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/cufon-replace.js"></script>
+<script>
+	$(document).ready(function() {
+		tabs.init();
+		$.fn.preload = function() {
+			this.each(function(){
+				$('<img/>')[0].src = this;
+			});
+		}	
+		$(['images/menu_icon1_active.gif','images/menu_icon2_active.gif']).preload();
+	})
+</script>
 <script type="text/javascript" src="js/Swis721_Cn_BT_400.font.js"></script>
 <script type="text/javascript" src="js/Swis721_Cn_BT_700.font.js"></script>
 <script type="text/javascript" src="js/tabs.js"></script>
@@ -256,17 +267,7 @@
 <!-- footer end -->
 		</div>
 <script type="text/javascript"> Cufon.now(); </script>
-<script>
-	$(document).ready(function() {
-		tabs.init();
-		$.fn.preload = function() {
-			this.each(function(){
-				$('<img/>')[0].src = this;
-			});
-		}	
-		$(['images/menu_icon1_active.gif','images/menu_icon2_active.gif']).preload();
-	})
-</script>
+
 <script type="text/javascript" src="js/productsDisp.js"></script>
 </body>
 </html>
