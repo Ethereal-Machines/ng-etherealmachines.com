@@ -67,16 +67,19 @@ $(function() {
 			'height': 'auto',
 			//'max-height': '30%',
 			'display': 'none',
-			'background-color': '#999'
+			'background-color': 'rgba(0,0,0,0)'
 		}).html($srcHtml).appendTo("body").fadeIn(500);
 		$("#expImg").on("load",function() {
-		
+			
 			$expWidth = $("#expDiv").outerWidth()/2;
 			$expHeight = $("#expDiv").outerHeight()/2;
-			$("#expDiv").css({
+			$("#expDiv").animate({
 				'margin-left': (-1*$expWidth)+'px',
 				'margin-top': (-1*$expHeight)+'px',
+			},1,function() {
+				$(this).children().animate({'opacity': '1'},500);
 			});
+			
 		
 		});
 		
