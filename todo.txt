@@ -1,4 +1,4 @@
-Preloading the Menu hover icons.
+Preloading the Menu hover icons. (Done, but effects have not been verified 100%)
 Gallery L image loading should show the images after centering only.
 Products page images of lower resolution, and show the L image as in Gallery page.
 Ethereal logo on every page is stretched too far and does not mix well with the background - Correct that.
