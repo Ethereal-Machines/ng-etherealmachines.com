@@ -1,202 +1,308 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Home</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/zerogrid.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/responsiveslides.css" />
-<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
-<script type="text/javascript" src="js/jquery-ui.js" ></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/styling.js"></script>
-<script type="text/javascript" src="js/Swis721_Cn_BT_400.font.js"></script>
-<script type="text/javascript" src="js/Swis721_Cn_BT_700.font.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/tms-0.3.js"></script>
-<script type="text/javascript" src="js/tms_presets.js"></script>
-<script type="text/javascript" src="js/jcarousellite.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-  <!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
-	<style type="text/css">
-		.bg{ behavior: url(js/PIE.htc); }
-	</style>
-  <![endif]-->
-	<!--[if lt IE 7]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
-		</div>
-	<![endif]-->
-	
-	<script src="js/responsiveslides.js">
-	<script>
-		$(function () {
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: false,
-			nav: true,
-			speed: 500,
-			maxwidth: 960,
-			namespace: "centered-btns"
-		  });
-		});
-	</script>
-	
+	<title>5-axis-website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="5 Axis Machine, features">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	<script type="text/javascript" src="assets/scripts/vendor.js"></script>
 </head>
-<body id="page1">
-<div class="body1">
-	<div class="body2">
-		<div class="main zerogrid">
-<!-- header -->
-			<header>
-				<div class="wrapper row">
-				<h1><a href="index.html" id="logo"><img src="images/logo13.jpg" /></a></h1>
-				<nav>
-					<ul id="menu">
-						<li id="nav1" class="active"><a href="index.html">Home<span>Welcome!</span></a></li>
-						<li id="nav3"><a href="Gallery.html">Gallery<span>Fine Art</span></a></li>
-						<li id="nav4"><a href="Products.html">Products & Services<span>for you</span></a></li>
-						<li id="nav5"><a href="Contacts.html">About Us<span>Core Principles</span></a></li>
-					</ul>
-				</nav>
-				</div>
+<body>
+	<!-- The old code for the navigation bar is commented for future reference -->
+	<!-- <nav class="project-nav">
+		<div class="wrapper wrapper-nav">
+			<div class="project-nav__img-container">
+				<img data-src="http://via.placeholder.com/24x24" alt="Company Logo" width="24" height="24" class="project-nav__img-container__img lazyload">
+			</div>
+			<ul class="project-nav__nav-list">
+				<li class="project-nav__nav-list__item"><a href="#about-section" class="project-nav__nav-list__links">About Product</a></li>
+				<li class="project-nav__nav-list__item"><a href="#features-section" class="project-nav__nav-list__links">Features</a></li>
+				<li class="project-nav__nav-list__item"><a href="#specs-section" class="project-nav__nav-list__links">Specs</a></li>
+				<li class="project-nav__nav-list__item"><a href="#about-company-section" class="project-nav__nav-list__links">Company Profile</a></li>
+				<li class="project-nav__nav-list__item"><a href="#contact-section" class="project-nav__nav-list__links">Contacts</a></li>
+			</ul>
+			<div class="project-nav__bars-container">
+				<i class="fa fa-bars"></i>
+			</div>
+		</div>
+	</nav> -->
 
-				<div class="wrapper row">
-					<div class="slider">
-					  	<div class="rslides_container">
-							<ul class="rslides" id="slider">
-								<li><img src="images/img1.jpg" alt=""></li>
-								<li><img src="images/img2.jpg" alt=""></li>
-								<li><img src="images/img3.jpg" alt=""></li>
-								 
-							</ul>
-						</div>
+	<!-- Bootstrap navigation bar is been added -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="wrapper">
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#project-nav" aria-expanded="false">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="http://etherealmachines.com/"><img data-src="assets/images/hero.png" alt="Company Logo" class="lazyload">
+	        </a>
+	      </div>
+	      <div id="project-nav" class="collapse navbar-collapse">
+	        <ul class="navbar__nav-list nav navbar-nav navbar-right">
+	          <li><a href="#about-section">Pentagram</a></li>
+	          <li><a href="#features-section">Features</a></li>
+	          <!-- <li><a href="#specs-section">Specs</a></li> -->
+	          <li><a href="#about-company-section">About</a></li>
+	          <li><a href="#contact-section">Contact</a></li>
+	        </ul>
+	      </div>
+	      <!--/.nav-collapse -->
+	    </div><!-- End of 'wrapper' -->
+	</nav>
+
+	<!-- <header id="home" class="project-header">
+		<div class="project-header__img-container">
+			<img data-src="assets/images/product-front-view copy.png" height="591" width="481" alt="Product image from front view" class="img-responsive project-header__img-container__img lazyload">
+		</div>
+		<div class="project-header__triangle-container">
+			<div class="project-header__triangle-container__main-heading">
+				<h1 class="headline headline-?-centered headline-?-top-heading">Lorem ipsum dolor sit amet</h1>
+				<span class="project-header__triangle-container__main-heading__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae excepturi vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae excepturi vero.</span>
+			</div>
+		</div>
+	</header> --><!-- end of old 'header' -->
+
+	<header id="home" align="center" class="project-header embed-responsive embed-responsive-16by9">
+		<video loop muted autoplay poster="assets/images/" class="project-header__video">
+	        <source src="assets/videos/4_3.mp4" type="video/mp4">
+		</video>
+		<div class="project-header__heading wrapper">
+			<h1 class="heading-special">The Ethereal Pentagram</h1>
+			<span class="roboto">World's First Desktop Simultaneous 5 Axis CNC Machine</span>
+		</div>
+	</header><!-- end of new 'header' -->
+
+	<div id="about-section" class="product-details">
+		<div class="wrapper">
+			<h2 class="headline headline--about-product headline--centered open-sans">The Ethereal Pentagram</h2>
+
+			<div class="container-fluid">
+				<div class="row product-details__row">
+					<div class="product-details__description col-sm-12">
+						<p class="roboto">
+							The Pentagram has been designed to be the world's first desktop simultaneous 5 axis subtractive manufacturing machine. Equipped with the capabilities of machining a plethora of materials, the Pentagram is poised to disrupt the manufacturing industry. 
+						</p>
+						<br>
+						<p class="roboto">
+							Pentagram has been made keeping in mind both industrial and hobby users. The Pentagram is a one stop solution for manufacturing smaller moulds, machining wax, etching PCBs, cutting precision parts and creating novelty products. The machine is compatible with a wide range of designing softwares ensuring easy operability of the machine.
+						</p>
+					</div>
+					<div class="product-details__product-image col-sm-12">
+						<img data-src="assets/images/about-2.gif" width="1050" height="690" alt="Product image in 3d view" class="img-responsive lazyload">
 					</div>
 				</div>
-			</header>
-<!-- header end-->
+			</div>
 		</div>
-	</div>
-</div>
-	<div class="body3">
-		<div class="main zerogrid">
-<!-- content -->
-			<article id="content">
-				<div class="wrapper row">
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">A</span>Precise and<span>Versatile</span></h3>
-							<p class="pad_bot1">Our machine can etch intricate design on wood, plastic, marble, granite, MDF, 
-acrylic etc., with a fine precision of upto 0.2mm.</p>
-							
-						</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">B</span><span> Portability</span><br></h3>
-							<p class="pad_bot1">The size and ease of installment of our machines facilitate easy transportation and usage.</p>
-							</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">C</span><span>Customizability</span><br></h3>
-							<p class="pad_bot1">Your choice, our build. Our Engineers build machines of various sizes, power and functionality to suit your need.</p>
-							
-						</div>
-					</section>
-					<section class="col-1-4">
-						<div class="wrap-col">
-							<h3><span class="dropcap">D</span><span>Single phase operability</span></h3>
-							<p class="pad_bot1">Our engineers have designed the electronics to enable installation almost 
-anywhere through a single phase supply.</p>
-							
-						</div>
-					</section>
+	</div><!-- end of 'product-details' -->
+
+	<div id="features-section" class="features">
+		<div class="wrapper">
+			<h2 class="headline headline--centered headline--features-headline open-sans">Features</h2>
+
+			<div class="features__feature-container">
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-1.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">Desktop Size</h4>
+					<p>Designed and engineered to occupy minimal floor space.</p>
 				</div>
-				<div class="wrapper row">
-					<section class="col-3-4">
-						<div class="wrap-col">
-							<h2 class="under">Welcome, dear visitor!</h2>
-							<div class="wrapper">
-								<figure class="left marg_right1"><img src="images/page1_img1.jpg" alt=""></figure>
-								<p class="pad_bot1">We at Ethereal Machines specialize in manufacturing CNC Routers. Based out of Bangalore, India; our clientele is 
-spread across India.</p>
-								<p>
-										Ethereal Machines caters to woodworking, jewelry, interior designing and signage industries. Our machines are also 
-used in plastic and aluminium fabrication, granite & marble engraving, PCB etching amongst others.
-</p>
-							</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-2.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">5-Axis Simultaneous Kinematics</h4>
+					<p>5 axis simulatneous movement to help reduce machining time.</p>
+				</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-3.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">High Accuracy Drive Mechanism</h4>
+					<p>Achieved through utilization of highly accurately calibrated ball screws and linear guide rails.</p>
+				</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-4.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">Encoder Feedback</h4>
+					<p>Ensures zero by-pass of machining code.</p>
+				</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-5.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">Dedicated PC-Based Controller</h4>
+					<p>Real time monitoring and control of the machining job in progress.</p>
+				</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-6.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">User Friendly Interface</h4>
+					<p>Ensures easy operability and aids in quick familiarization with the machine.</p>
+				</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-7.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">Z Probe</h4>
+					<p>Facilitates auto tool height compensation.</p>
+				</div>
+				<div class="features__feature-item">
+					<img data-src="assets/images/features-icons/feat-8.svg" width="168" height="168" alt="Product feature image" class="img-responsive img-circle lazyload">
+					<h4 class="features__feature-item__heading">Multiple Tool Support</h4>
+					<p>Permits employment of various tools to machine a spectrum of materials.</p>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- end of 'features' -->
+	
+	<!-- Commented the below section for future use -->
+	<!-- <div id="specs-section" class="tech-specs">
+
+		<div class="wrapper">
+			<h2 class="headline headline-?-centered headline-?-tech-specs">Tech spec of the product</h2>
+
+			<div class="tech-specs__item">
+				<img data-src="http://via.placeholder.com/576x448" class="img-responsive tech-specs__item__item-img lazyload">
+				<div class="tech-specs__item__details tech-specs__item__details-?-right">
+					<h3 class="tech-specs__item__details__subheading">Sample Text 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit nesciunt placeat aperiam temporibus ipsa aliquam, debitis laudantium, corporis, accusamus provident consectetur. Natus quam corrupti, soluta fugit praesentium in neque.</p>
+				</div>
+			</div>
+			<div class="tech-specs__item">
+				<img data-src="http://via.placeholder.com/576x448" class="img-responsive tech-specs__item__item-img lazyload">
+				<div class="tech-specs__item__details tech-specs__item__details-?-left">
+					<h3 class="tech-specs__item__details__subheading">Sample Text 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit nesciunt placeat aperiam temporibus ipsa aliquam, debitis laudantium, corporis, accusamus provident consectetur. Natus quam corrupti, soluta fugit praesentium in neque.</p>
+				</div>
+			</div>
+			<div class="tech-specs__item">
+				<img data-src="http://via.placeholder.com/576x448" class="img-responsive tech-specs__item__item-img lazyload">
+				<div class="tech-specs__item__details tech-specs__item__details-?-right">
+					<h3 class="tech-specs__item__details__subheading">Sample Text 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit nesciunt placeat aperiam temporibus ipsa aliquam, debitis laudantium, corporis, accusamus provident consectetur. Natus quam corrupti, soluta fugit praesentium in neque.</p>
+				</div>
+			</div>
+			<div class="tech-specs__item">
+				<img data-src="http://via.placeholder.com/576x448" class="img-responsive tech-specs__item__item-img lazyload">
+				<div class="tech-specs__item__details tech-specs__item__details-?-left">
+					<h3 class="tech-specs__item__details__subheading">Sample Text 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reprehenderit nesciunt placeat aperiam temporibus ipsa aliquam, debitis laudantium, corporis, accusamus provident consectetur. Natus quam corrupti, soluta fugit praesentium in neque.</p>
+				</div>
+			</div>
+		</div>
+	</div> --><!-- end of 'tech-specs' -->
+
+	<div id="about-company-section" class="about-company">
+		<div class="wrapper">
+			<h2 class="headline headline--centered headline--about-company-heading">About Ethereal Machines</h2>
+
+			<p>
+				Ethereal Machines breathes by the mission of churning out entrepreneurs in the engineering world. Our machines are built to invigorate, nurture and embolden an engineer while unbridling the designer’s freedom to create. Ethereal Machines brings about a conjunction between additive and subtractive manufacturing techniques.
+			</p>
+			<p>
+				The experience gained over the years through manufacturing CNC Routers has helped us command technical strength and expertise over the field. Technologies that have the potential to create large-scale impacts have always consumed us and shaped the direction of our work over the past few years. Our team of engineers strive everyday to refine the shape of the manufacturing industry, lesser the burden of capital costs of machineries and increase user friendliness of CNC machines.
+			</p>
+			<p>
+				Our mission is to solve problems related to manufacturing faced by industries, engineers and makers through our CNC Routers and aid the growth of small-scale and mid-scale entrepreneurs by equipping them with affordable machines.
+			</p>
+			<p>
+				Based out of the startup hub of India, Bangalore, Ethereal Machines caters to clients across various fields and helps them establish successful businesses. Our clients range from some of the well renowned industries in India to the best maker-spaces as well.
+			</p>
+			<p>
+				Ethereal Machines is an ISO 9001: 2015 certified company. Ethereal Machines is also recognized as a start-up under the ‘Start-up India’ and ‘Make in India’ scheme by the Government of India.
+			</p>
+			<hr class="hr-rule">
+			
+			<div class="about-company__logo-container">
+				<img data-src="assets/images/make-in-india.png" width="298" height="136" class="about-company__logo-container__make-in-india lazyload">
+				<img data-src="assets/images/startup-india.png" width="334" height="74" class="about-company__logo-container__startup-india lazyload">
+				<img data-src="assets/images/iso-logo.png" width="113" height="113" class="about-company__logo-container__iso lazyload">
+			</div>
+		</div>
+	</div><!-- end of 'about-company' -->
+
+	<div id="contact-section" class="contact-and-enquiry section-background">
+		<div class="wrapper wrapper--form">
+			<h2 class="headline headline--form-headline headline--centered">Contact and enquiry</h2>
+			<p class="contact-and-enquiry__msg">Fill in your details to get in touch with us!</p>
+			<form class="contact-and-enquiry__form" action="https://formspree.io/info.etherealmachines@gmail.com" method="post">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Enter your name..." name="userName" required>
+				</div>
+				<div class="form-group">
+					<label for="email">E-mail</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter your email..." name="userEmail" required>
+				</div>
+				<div class="form-group">
+					<label for="enquiry-nature">Nature of Enquiry</label>
+					<input type="text" class="form-control" id="enquiry-nature" placeholder="Nature of enquiry.." name="typeOfEnquiry" required>
+				</div>
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea class="form-control form-group__text-area" id="message" rows="8" placeholder="Your message..." type="text" name="message" required></textarea>
+				</div>
+				<button type="submit" class="btn btn-default contact-and-enquiry__form__submit-btn" value="Send">SUBMIT</button>
+			</form>
+			
+		</div>
+	</div><!-- end of 'contact-and-enquiry' -->
+	
+	<!-- Commenting the footer part for the furture use -->
+	<!-- <footer id="footer-section" class="project-footer">
+		<div class="wrapper wrapper-?-footer">
+			<div class="project-footer-?-left-side">
+				<div class="project-footer__company-logo">
+					<img data-src="http://via.placeholder.com/62x65" class="lazyload">
+					<h5 class="project-footer__company-logo__heading">ETHEREAL</h5>
+					<span>Lorem ipsum</span>
+				</div>
+				<ul class="project-footer__terms-list">
+					<li>Privacy Policy</li>
+					<li>Terms of Use</li>
+					<li>Legal</li>
+				</ul>
+			</div>
+
+			<div class="project-footer-?-right-side">
+				<div class="project-footer__social-media-container">
+					<label>Social</label>
+					<ul class="project-footer__social-media-container__social-media-list">
+						<li><img data-src="http://via.placeholder.com/31x31" class="lazyload"></li>
+						<li><img data-src="http://via.placeholder.com/31x31" class="lazyload"></li>
+						<li><img data-src="http://via.placeholder.com/31x31" class="lazyload"></li>
+						<li><img data-src="http://via.placeholder.com/31x31" class="lazyload"></li>
+						<li><img data-src="http://via.placeholder.com/31x31" class="lazyload"></li>
+					</ul>
+				</div>
+				<div class="project-footer__newsletter">
+					<label>Newsletter</label>
+					<form class="project-footer__newsletter__form">
+						<div class="form-group">
+							<input type="text" class="form-control">
 						</div>
-					</section>
-					
+						<button type="submit" class="btn btn-primary project-footer__newsletter__form__button">Join Newletter</button>
+					</form>
 				</div>
-			</article>
+			</div>
+
 		</div>
-	</div>
-	<div class="body4">
-		<div class="main zerogrid">
-			<article id="content2">
-				<div class="wrapper row">
-					<section class="col-1-3">
-					<div class="wrap-col">
-						<h4>Why Us?</h4>
-						<ul class="list1">
-							<li><a href="#">Precise and Versatile</a></li>
-							<li><a href="#">Portability</a></li>
-							<li><a href="#">Customizability </a></li>
-							<li><a href="#">Single phase operability</a></li>
-						</ul>
-					</div>
-					</section>
-					<section class="col-1-3">
-					<div class="wrap-col">
-						<h4>Follow Us</h4>
-						<ul id="icons">
-							<li><a href="https://www.facebook.com/etherealmachines" target="_blank"><img src="images/icon1.jpg" alt="">Facebook</a></li>
-							<li><a href="https://www.youtube.com/channel/UCW8I3771Afa4v_KkATxw2EA" target="_blank"><img src="images/icon2.jpg" alt="">YouTube</a></li>
-							<!-- Removed LinkedIn and Delicious 
-							<li><a href="#"><img src="images/icon3.jpg" alt="">LinkedIn</a></li>
-							<li><a href="#"><img src="images/icon4.jpg" alt="">Delicious</a></li> -->
-							
-						</ul>
-						
-					</div>
-					</section>
-					<section class="col-1-3">
-					<div class="wrap-col">
-						<h4>Address</h4>
-						<ul class="address">
-							<li><span>Country:</span>India</li>
-							<li><span>City:</span>Bangalore</li>
-							<li><span>Phone:</span>+91-9632490123</li>
-							<li class="li2"><span>Email:</span><a href="mailto:">info@etherealmachines.com</a></li>
-							<li class="li2"><span>&nbsp;</span><a href="mailto:">navinjain@etherealmachines.com</a></li>
-							<li><span>&nbsp;</span><a href="mailto:">kaushikmudda@etherealmachines.com</a></li>
-							
-						</ul>
-					</div>
-					</section>
-					
-					<!--- nikhil removed a section here and added the subscribe form to previous section-->
-				</div>
-			</article>
-<!-- content end -->
+	</footer> -->
+
+	<footer id="footer-section" class="project-footer">
+		<div class="wrapper wrapper--footer">
+			<div class="project-footer__company-name">
+				<img src="assets/images/footer-hero.png" alt="Footer Hero" width="70" height="20">
+			</div>
+			<div class="project-footer__company-logo">
+				<img src="assets/images/company-logo.png" alt="Company Logo">
+			</div>
+			<div class="project-footer__copyright">
+				&copy 2017. All right reserved.
+			</div>
 		</div>
-	</div>
-		<div class="main zerogrid">
-<!-- footer -->
-			<footer>
-				Copyright &copy Ethereal Machines 
-			</footer>
-<!-- footer end -->
-		</div>
-<script type="text/javascript"> Cufon.now(); </script>
+	</footer>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js
+"></script>
+	<script type="text/javascript" src="assets/scripts/app.js"></script>
 </body>
 </html>
