@@ -4,7 +4,13 @@ $(function() {
 		console.log("Click event registered on the links");
 		var target = $(this).attr('href');
 		var strip = target.slice(1);
-		var anchor = $("div[id='" + strip + "']");
+		var anchor;
+
+		if (strip !== "home") {
+			anchor = $("div[id='" + strip + "']");
+		} else {
+			anchor = $("header[id='" + strip + "']");
+		}
 
 		e.preventDefault();
 
