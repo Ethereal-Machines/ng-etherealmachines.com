@@ -1,0 +1,128 @@
+/*.project-header {
+	
+	padding-top: 27px;
+	background-color: darkviolet;
+
+	&__triangle-container {
+		width: 100%;
+		height: 394px;
+		position: relative;
+		background-color: yellow;
+
+		&__main-heading {
+			position: absolute;
+			top: 43.9%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 100%;
+			text-align: center;
+
+			&__subtitle {
+				display: block;
+				max-width: 400px;
+				margin: 0 auto;
+				padding-top: 22px;
+			}
+
+		}
+	}
+	
+	&__img-container {
+		
+		position: relative;
+		height: 591px;
+
+		&__img {
+			position: absolute;
+			top: 60px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+		}
+	}
+
+}*/
+
+/*.project-header {
+	position: relative;
+	overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0dfe1;
+
+    &__video {
+    	position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		background-color: #e0dfe1;
+		margin: auto;
+    }
+}*/
+
+.project-header {
+
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	background: url('../../assets/images/first-frame-pic.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__video-container {
+		position: absolute;
+		width: calc(100vh * (1000 / 562));    /*  video width / height  */
+		height: calc(100vw * (562 / 1000));   /*  video height / width  */
+		min-width: 100%;
+		min-height: 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		&__video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__heading {
+		color: $fontColor;
+		text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+		width: 100%;
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translateY(-50%);
+		transform: translateX(-50%);
+		text-align: center;
+
+		@mixin atPhone {
+			top: 67%;
+		}
+
+		h1 {
+			font-size: 50px;
+			margin-top: 0 !important;
+
+			@mixin atPhone {
+				font-size: 35px;
+			}
+		}
+
+		span {
+			font-size: 30px;
+			padding: 10px;
+
+			@mixin atPhone {
+				font-size: 20px;
+			}
+		}
+	}
+}

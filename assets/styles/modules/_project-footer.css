@@ -1,0 +1,91 @@
+/* Commenting the styles for the future refrence*/
+/*.project-footer {
+
+	background-color: $navColor;
+	color: $fontColor;
+	font-family: $paraFont;
+
+	&--left-side {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	
+	&--right-side {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&__company-logo {
+		text-align: center;
+
+		&__heading {
+			margin-bottom: 0;
+		}
+	}
+
+	&__terms-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0 0 10px 56px;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			padding: 0 25px;
+		}
+
+		li:nth-child(1),
+		li:nth-child(2) {
+			border-right: 1px solid #fff;
+		}
+	}
+
+	&__social-media-container {
+		
+		margin-right: 69px;
+
+		&__social-media-list {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&__newsletter__form__button {
+		display: block;
+		margin-left: auto;
+	}
+}
+*/
+
+.project-footer {
+	font-family: $paraFont;
+
+	&__company-name {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	&__copyright {
+		font-size: 10px;
+		font-family: 'Roboto', sans-serif;
+	}
+}

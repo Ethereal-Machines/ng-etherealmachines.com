@@ -1,0 +1,105 @@
+
+.navbar {
+	
+	&__nav-list {
+		text-align: center;
+
+		li {
+			font-family: 'Roboto', sans-serif !important;
+		}
+
+		li:hover {
+			background-color: black;
+		}
+	}
+}
+
+/* 
+* CSS for the navigation bar before adding the 
+* bootstrap navigation
+*/
+
+/*.project-nav {
+
+	padding: 8px 0;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	color: $fontColor;
+	background-color: $navColor;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+
+	&__img-container {
+		width: 10%;
+	}
+
+	&__nav-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		width: 90%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+
+		@mixin atMedium {
+			text-align: center;
+			display: none;
+			position: absolute;
+			width: 100%;
+			top:40px;
+			left: 0;
+			background-color: black;
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 52px;
+			text-transform: uppercase;
+
+			@mixin atMedium {
+				display: block !important;
+				margin-left: 0 !important;
+			}
+		}
+
+		&__links {
+			color: $fontColor;
+			text-decoration: none;
+		}
+
+		&__links:hover {
+			text-decoration: underline;
+			color: $fontColor;
+		}
+
+		&__links:focus {
+			color: $fontColor;
+		}
+	}
+
+	&__bars-container {
+		display: none;
+		text-align: center;
+		color: $fontColor;
+		width: 5%;
+		position: relative;
+
+		@mixin atMedium {
+			display: flex;
+			justify-content: flex-end;
+			width: 90%;
+		}
+
+		i {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}*/

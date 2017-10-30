@@ -1,0 +1,38 @@
+/*Commented the styles for the tech-specs section*/
+
+/*.tech-specs {
+	
+	padding-bottom: 72px;
+	background-color: #f5f5f5;
+
+	&__item {
+		position: relative;
+		margin-bottom: 72px;
+
+		&__item-img {
+			margin: 0 auto;
+		}
+
+		&__details {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			max-width: 270px;
+			font-size: 17px;
+
+			&__subheading {
+				font-family: 'AkkuratBold';
+				font-weight: bold;
+				text-align: center;
+			}
+
+			&--left {
+				left: 0;
+			}
+
+			&--right {
+				right: 0;
+			}
+		}
+	}
+}*/

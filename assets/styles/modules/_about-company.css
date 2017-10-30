@@ -1,0 +1,39 @@
+.about-company {
+	/*color: black;*/
+
+	p {
+		text-align: center;
+		font-size: 20px;
+		font-weight: 300;
+		font-family: 'Roboto', sans-serif !important;
+		line-height: 1.6;
+		margin-bottom: 15px;
+	}
+
+	&__logo-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-bottom: 115px;
+		
+		img {
+			/* move these properties for the media queries*/
+			margin-right: 20px;
+			margin-left: 20px;
+			margin-bottom: 30px;
+		}
+
+		&__make-in-india {
+			margin: auto 0;
+		}
+
+		&__startup-india {
+			margin: auto 0;
+		}
+
+		&__iso {
+			margin: auto 0;
+		}
+	}
+}
