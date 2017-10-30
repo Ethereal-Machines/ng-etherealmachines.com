@@ -1,0 +1,20 @@
+/* Importing the bootstarp for the project */
+@import "bootstrap";
+
+/* Importing the assets styles */
+@import "base/_variables";
+@import "base/_global";
+@import "modules/_fonts";
+@import "base/_mixins";
+@import "modules/_wrapper";
+@import "modules/_headline";
+@import "modules/_section-background";
+@import "modules/_about-company";
+@import "modules/_hr-rule";
+@import "modules/_contact-and-enquiry";
+@import "modules/_features";
+@import "modules/_product-details";
+@import "modules/_tech-specs";
+@import "modules/_project-header";
+@import "modules/_project-nav";
+@import "modules/_project-footer";

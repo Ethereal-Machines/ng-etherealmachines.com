@@ -1,0 +1,39 @@
+.features {
+	
+	background-color: $backColor;
+	color: $fontColor;
+	
+	&__feature-container {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&__feature-item {
+		text-align: center;
+		max-width: 200px;
+		width: 25%;
+		margin-right: 45.1px;
+		margin-left: 45.1px;
+		margin-bottom: 56px;
+
+		&__heading {
+			margin-top: 24px !important;
+			text-transform: uppercase;
+			font-family: 'Open Sans', sans-serif !important;
+		}
+
+		p {
+			font-family: 'Roboto', sans-serif !important;
+		}
+
+		img {
+			margin: 0 auto;
+		}
+
+		@mixin atSmall {
+			width: 100%;
+		}
+	}
+}
