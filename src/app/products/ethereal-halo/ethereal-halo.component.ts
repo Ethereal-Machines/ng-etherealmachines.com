@@ -82,6 +82,7 @@ export class EtherealHaloComponent implements OnInit {
       featureName: 'MULTIPLE TOOL SUPPORT',
       featureDetail: 'Permits employment of various tools to machine a spectrum of materials.'
     }],
+
     techSpecs: [{
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-1.svg',
       altNameForImage: 'Tech Spec Image',
@@ -91,7 +92,7 @@ export class EtherealHaloComponent implements OnInit {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-2.svg',
       altNameForImage: 'Tech Spec Image',
       techSpecName: 'FOOTPRINT',
-      techSpecDetail: 'Designed and engineered to occupy minimal floor space.'
+      techSpecDetail: '900 x 900 mm'
     }, {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-3.svg',
       altNameForImage: 'Tech Spec Image',
@@ -131,7 +132,7 @@ export class EtherealHaloComponent implements OnInit {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-10.svg',
       altNameForImage: 'Tech Spec Image',
       techSpecName: 'EXTRUDER TEMPERATURE',
-      techSpecDetail: 'Upto 350° CelsiusWORKING SPEED'
+      techSpecDetail: 'Upto 350° Celsius'
     }, {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-11.svg',
       altNameForImage: 'Tech Spec Image',
