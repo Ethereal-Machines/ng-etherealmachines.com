@@ -1,0 +1,82 @@
+.press-release {
+
+  .section-heading {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__top-section {
+    padding-top: 10px;
+  }
+
+  &__halo-image {
+    margin: 20px 0;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 320px;
+      height: 178px;
+
+      @include atMedium {
+        width: 720px;
+        height: 400px;
+      }
+    }
+  }
+
+  &__image-quote {
+    width: 100%;
+    padding: 5px 0;
+
+    @include atMedium {
+      @include flexBoxRow;
+      padding: 20px 0;
+    }
+
+    .image {
+      width: 630px;
+      height: 420px;
+      background: url('../assets/images/press-release.component.images/halo-light.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    p,
+    .image {
+      width: 100%;
+      display: block;
+      @include atLarge {
+        width: 50%;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      @include atMedium {
+        font-size: 25px;
+      }
+      @include atLarge {
+        padding-right: 10px;
+      }
+    }
+
+    .image {
+      margin: 0 auto;
+      @include atLarge {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &__bottom-section {
+    padding-bottom: 30px;
+  }
+
+}
+
+strong {
+  @include robotoMedium;
+}

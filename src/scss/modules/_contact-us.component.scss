@@ -1,0 +1,125 @@
+.contact-us {
+  padding-top: 48px;
+
+  /* code for the section-heading is moved globally */
+  // &__heading {
+  //   font-size: 24px;
+  //   margin: 13px 0 4px;
+  //   text-align: center;
+
+  //   @include atMedium {
+  //     font-size: 50px;
+  //     margin: 54px 0 13px;
+  //   }
+  //   @include atLarge {
+  //     font-size: 40px;
+  //     margin: 23px 0 6px;
+  //   }
+  //   @include atLarger {
+  //     font-size: 50px;
+  //     margin: 42px 0 13px;
+  //   }
+  // }
+
+  &__sub-heading {
+    @include ralewayRegular;
+    font-size: 12px;
+    margin: 0 0 13px;
+    text-align: center;
+
+    @include atMedium {
+      font-size: 22px;
+      margin: 0 0 38px;
+    }
+    @include atLarge {
+      font-size: 15px;
+      margin: 0 0 17px;
+    }
+    @include atLarger {
+      font-size: 22px;
+      margin: 0 0 38px;
+    }
+  }
+
+  &__form {
+    max-width: 620px;
+    margin: 0 auto 38px;
+
+    @include atMedium {
+      margin: 0 auto 45px;
+    }
+
+    label {
+      font-size: 10px;
+      @include ralewayMedium;
+
+      @include atMedium {
+        font-size: 18px;
+      }
+      @include atLarge {
+        font-size: 14px;
+      }
+      @include atLarger {
+        font-size: 18px;
+      }
+    }
+
+    input {
+      font-size: 10px;
+      height: 23px;
+      @include atMedium {
+        height: 32px;
+        font-size: 16px;
+      }
+      @include atLarge {
+        font-size: 12px;
+      }
+      @include atLarger {
+        font-size: 16px;
+      }
+    }
+
+    textarea {
+      font-size: 10px;
+      margin-bottom: 13px;
+      height: 72px;
+      resize: none;
+      @include atMedium {
+        font-size: 16px;
+        margin-bottom: 32px;
+        height: 248px;
+      }
+      @include atLarge {
+        font-size: 12px;
+        margin-bottom: 28px;
+        height: 112px;
+      }
+      @include atLarger {
+        font-size: 16px;
+        margin-bottom: 32px;
+        height: 248px;
+      }
+    }
+
+    &__submit-btn {
+      @include ralewayRegular;
+      display: block;
+      margin: 0 auto;
+      background: $backgroundColor;
+      width: 150px;
+      color: white;
+      font-size: 10px;
+      font-weight: 400; 
+
+      @include atMedium {
+        width: 218px;
+        font-size: 15px;
+      }
+    }
+
+    &__submit-btn:hover {
+      background: $backgroundColor;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<div class="product" *ngFor="let product of products">
+  <!-- Video of product will go full width -->
+  <header class="product__video-section">
+    <div class="product__video-container">
+      <video loop muted autoplay poster="{{ product.header.firstFrameImage }}" class="product__video-container__video" [ngClass]="{ 'product__video-container__video--for-estrella' : isEstrella }">
+        <source src="{{ product.header.productVideoSrc }}" type="video/mp4">
+      </video>
+    </div>
+    <div class="wrapper product__product-heading-container" [ngClass]="{ 'product__product-heading-container--for-estrella' : isEstrella, 'product__product-heading-container--for-pentagram' : isPentagram }">
+      <h1 class="product__product-heading-container__heading">{{ product.header.productName }}</h1>
+      <hr>
+      <h3 class="product__product-heading-container__sub-heading">{{ product.header.productTagLine }}</h3>
+      <h3 class="product__product-heading-container__sub-heading--for-estrella" [hidden]="!isEstrella">{{ product.header.extraLine }}</h3>
+      <img src="assets/images/products.component.images/halo-images/watch-video.svg" alt="Watch video" height="38" width="166" [ngClass]="{ 'hidden-watch-video' : !isHalo }" (click)="openModal()">
+    </div>
+  </header>
+
+  <div class="section-wrapper">
+    <section class="product__about-product wrapper" [ngClass]="{ 'product__about-product--hide' : noAbout }">
+      <h2 class="product__about-product__heading section-heading">
+        {{ product.about.productName }}
+      </h2>
+      <p class="product__about-product__detail section-text" *ngFor="let detail of product.about.details">{{ detail }}</p>
+      <picture class="product__about-product__image">
+        <source srcset="{{ product.about.pictures.largerSizeImage }} 1920w" media="(min-width: 1201px)">
+        <source srcset="{{ product.about.pictures.largeSizeImage }} 1201w" media="(min-width: 1024px)">
+        <source srcset="{{ product.about.pictures.mediumSizeImage }} 1024w" media="(min-width: 768px)">
+        <source srcset="{{ product.about.pictures.smallSizeImage }} 768w" media="(min-width: 320px)">
+        <img srcset="{{ product.about.pictures.defaultImage }} 320w" alt="Pentagram Image">
+      </picture>
+    </section>
+  </div>
+
+  <div class="section-wrapper section-wrapper--black">
+    <section class="product__features wrapper" [ngClass]="{ 'product__features--hide' : noFeature }">
+      <h2 class="product__features__heading section-heading">
+        Features
+      </h2>
+      <ul class="product__features__features-list">
+        <li class="product__features__features-list__item" *ngFor="let feature of product.features">
+          <img src="{{ feature.featureImage }}" alt="{{ feature.altNameForImage }}" class="feature-image" width="168" height="168">
+          <h3 class="feature-heading">{{ feature.featureName }}</h3>
+          <p class="feature-detail">{{ feature.featureDetail }}</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="section-wrapper">
+    <section class="product__tech-specs wrapper" [ngClass]="{ 'product__tech-specs--hide' : noTechSpecs }">
+      <h2 class="product__tech-specs__heading section-heading">
+        Technical Specifications
+      </h2>
+      <ul class="product__tech-specs__tech-specs-list">
+        <li class="product__tech-specs__tech-specs-list__item" *ngFor="let techSpec of product.techSpecs">
+          <img src="{{ techSpec.techSpecImage }}" alt="{{ techSpec.altNameForImage }}" class="tech-spec-image" width="168" height="168">
+          <h3 class="tech-spec-heading">{{ techSpec.techSpecName }}</h3>
+          <p class="tech-spec-detail">{{ techSpec.techSpecDetail }}</p>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="modal-container" [ngClass]="{ 'modal-container--active-modal' : isModalOpen }" (click)="closeModal()">
+    <img src="assets/images/app.component.images/cross-btn.svg" alt="Cross" width="30" height="30" class="cross-btn">
+    <!-- <iframe width="720" height="400" src="https://www.youtube-nocookie.com/embed/4c_7WmSYjMU?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="0">
+    </iframe> -->
+    <iframe width="720" height="400" src="https://www.youtube-nocookie.com/embed/4c_7WmSYjMU?rel=0&amp;controls=0" frameborder="0"
+      allowfullscreen>
+    </iframe>
+      
+  </div>
+
+</div>
+
+<!-- Adding footer for the website -->
+<app-footer></app-footer>

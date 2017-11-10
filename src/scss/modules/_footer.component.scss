@@ -1,0 +1,229 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $backgroundColor;
+
+  &__about-company-container {
+    width: 100%;
+
+    @include atMedium {
+      @include flexBoxRow;
+      border-bottom: 1px solid #fff;
+    }
+
+    &__company-logo-container {
+
+      @include fullHeightNavbar {
+        border-bottom: 1px solid #fff;
+
+        display: flex;
+        
+        .on-small-size-only {
+          display: block;
+          margin: 8px auto;
+        }
+
+        .on-large-size-only {
+          display: none;
+        }
+
+      }
+
+      @include atMedium {
+        /* Code for the medium size goes here */
+        width: 30%;
+      }
+    }
+
+    &__company-contacts-container {
+      @include flexBoxRow;
+      color: white;
+
+      @include fullHeightNavbar {
+        border-bottom: 1px solid #fff;;
+      }
+
+      @include atMedium {
+        /* Code for the medium size goes here */
+        width: 70%;
+        justify-content: flex-end;
+      }
+
+      h4 {
+        @include chivoRegular;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+      }
+
+      &__social-media {
+        width: 50%;
+
+        @include fullHeightNavbar {
+          padding-left: 5px;
+          width: 40%;
+        }
+
+        @include atMedium {
+          padding: 0;
+          max-width: 220px;
+        }
+
+        .social-media-list {
+          @include flexBoxRow;
+          padding: 0;
+          list-style: none;
+
+          @include fullHeightNavbar {
+            max-width: 80px;
+          }
+
+          &__item {
+            transform: scale(1);
+            transition: all .3s ease;
+
+            @include fullHeightNavbar {
+              margin: 0 10px 10px 0;
+            }
+
+            @include atMedium {
+              margin: 0 10px 0 0;
+            }
+
+            &--no-margin-small {
+
+              @include fullHeightNavbar {
+                margin: 0;
+              }
+            }
+          }
+
+          &__item:hover {
+            transform: scale(1.3);
+          }
+        }
+      }
+
+      &__contact-us {
+        width: 50%;
+
+        @include fullHeightNavbar {
+          text-align: right;
+          padding-right: 5px;
+          width: 60%;
+        }
+
+        @include atMedium {
+          padding: 0;
+          width: 30%;
+          max-width: 170px;
+          padding-right: 10px;
+        }
+
+        .contact-types {
+          @include robotoLight;
+          font-size: 10px;
+          font-weight: 100;
+          padding: 0;
+          list-style: none;
+          letter-spacing: .5px;
+
+          &__item {
+            margin-bottom: 5px;
+
+            a {
+              color: white;
+              text-decoration: none;
+            }
+
+            a:hover {
+              text-decoration: underline;
+            }
+
+            @include fullHeightNavbar {}
+  
+            @include atMedium {}
+          }
+        }
+      }
+    }
+  }
+
+  &__copyright-container {
+    @include robotoThin;
+    @include flexBoxRow;
+    width: 100%;
+    color: #fff;
+
+    &__copyright-msg {
+      font-size: 9px;
+      font-weight: 100;
+      letter-spacing: .8px;
+
+      @include fullHeightNavbar {
+        width: 100%;
+        margin: 10px 0 8.3px;
+        text-align: center;
+      }
+
+      @include atMedium {
+        /* code for the medium size goes here */
+        width: 42%;
+        margin: 13.3px 0 15.7px 49px;
+      }
+    }
+
+    &__options {
+      @include flexBoxRow;
+      list-style: none;
+      padding: 0;
+      margin-right: auto;
+      margin-left: auto;
+
+      @include fullHeightNavbar {
+        width: 100%;
+        justify-content: center;
+      }
+
+      @include atMedium {
+        width: 50%;
+        margin: 8.3px 0 13.5px;
+        justify-content: flex-end;
+      }
+
+      &__item {
+        font-size: 9px;
+        font-weight: 400;
+        width: 25%;
+        text-align: center;
+        max-width: 80px;
+        border-right: 1px solid #fff;
+
+        &--no-border {
+          border: 0px;
+        }
+
+        @include atMedium {
+          line-height: 19.19px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.on-small-size-only {
+  @include atMedium {
+    display: none;
+  }
+}
+
+.on-large-size-only {
+  @include atMedium {
+    display: block;
+    margin: 14px 0 14px 53px;
+  }
+}

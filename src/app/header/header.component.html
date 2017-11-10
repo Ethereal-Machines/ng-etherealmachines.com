@@ -1,0 +1,47 @@
+<nav class="nav">
+  <div class="wrapper nav__wrapper">
+    <div class="nav__header">
+      <a routerLink="/" class="nav__header__brand">
+        <img src="assets/images/header.component.images/company-logo.svg" alt="Logo" width="30" height="30">
+      </a>
+    </div>
+    <div class="nav__company-name hide-if-not-small">
+      <img src="assets/images/header.component.images/company-name.svg" height="25" width="80" alt="Name">
+    </div>
+    <div class="nav__toggle-btn hide-if-not-small">
+      <i class="fa" [ngClass]="{ 'fa-bars' : !isIn, 'fa-close' : isIn}" area-hidden="true" (click)="toggleState()"></i>
+    </div>
+    <ul class="nav__list" [ngClass]="{ 'nav__list--active' : isIn }">
+      <li class="nav__list__item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a class="links" routerLink="/" (click)="toggleState()">Home</a>
+      </li>
+      <li class="nav__list__item nav__list__item--have-sub-list">
+        <a class="links links-disable">Products</a>
+        <ul class="nav__list__item__sub-list">
+          <li class="arrow-up image-hide"></li>
+          <li class="nav__list__item__sub-list__item have-top-border" routerLinkActive="active">
+            <i class="fa fa-angle-right i-hide"></i>
+            <a routerLink="/products/halo" (click)="toggleState()"><img src="assets/images/products.component.images/halo-images/halo-render.svg" alt="Halo" class="image-hide" width="60" height="60"></a>
+            <a class="sub-links" routerLink="/products/halo" (click)="toggleState()">Halo</a>
+          </li>
+          <li class="nav__list__item__sub-list__item" routerLinkActive="active">
+            <i class="fa fa-angle-right i-hide"></i>
+            <a routerLink="/products/pentagram" (click)="toggleState()"><img src="assets/images/products.component.images/pentagram-images/pentagram-render.svg" alt="Pentagram" class="image-hide" width="60" height="60"></a>
+            <a class="sub-links" routerLink="/products/pentagram" (click)="toggleState()">Pentagram</a>
+          </li>
+          <li class="nav__list__item__sub-list__item no-bottom-border" routerLinkActive="active">
+            <i class="fa fa-angle-right i-hide"></i>
+            <a routerLink="/products/estrella" (click)="toggleState()"><img src="assets/images/products.component.images/estrella-images/estrella-render.svg" alt="Estrella" class="image-hide" width="60" height="60"></a>
+            <a class="sub-links" routerLink="/products/estrella" (click)="toggleState()">Ray</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav__list__item" routerLinkActive="active">
+        <a class="links" routerLink="/company" (click)="toggleState()">About</a>
+      </li>
+      <li class="nav__list__item" routerLinkActive="active">
+        <a class="links" routerLink="/media" (click)="toggleState()">Media</a>
+      </li>
+    </ul>
+  </div>
+</nav>
