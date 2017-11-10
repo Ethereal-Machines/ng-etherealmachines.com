@@ -1,0 +1,366 @@
+.product {
+
+  &__video-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 0;
+  }
+
+  &__video-container {
+    position: absolute;
+    width: calc(100vh * (1000 / 562));    /*  video width / height  */
+    height: calc(100vw * (562 / 1000));   /*  video height / width  */
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    &__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &--for-estrella {
+        filter: blur(5px);
+      }
+    }
+  }
+
+  &__product-heading-container {
+    position: absolute;
+    // top: 65%;
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+
+    @include atMedium {
+      top: 57%;
+      width: 94%;
+    }
+
+    &--for-estrella {
+      color: black;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--for-pentagram {
+      color: black;
+
+      @include atMedium {
+        top: 78%;
+      }
+    }
+
+    &__heading {
+      @include ralewayMedium;
+      font-size: 35px;
+      // margin: 0 0 7px;
+      margin: 0;
+
+      @include atMedium {
+        font-size: 45px;
+        // margin: 0 0 11.5px;
+      }
+
+      @include atLarge {
+        font-size: 50px;
+        // margin: 0 0 12px;
+      }
+    }
+
+    hr {
+      margin: 0 0 12.5px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include atMedium {
+        width: 40%;
+      }
+    }
+
+    &__sub-heading {
+      @include ralewayRegular;
+      font-size: 20px;
+      margin: 0;
+
+      @include atMedium {
+        font-size: 27px;
+        margin: 0;
+      }
+
+      @include atLarge {
+        font-size: 30px;
+        margin: 0;
+      }
+
+      &--for-estrella {
+        @include ralewayRegular;
+        color: white;
+        text-shadow: 0px;
+        @include fullHeightNavbar {
+          width: 300px;
+          padding: 5px;
+          border-radius: 15px;
+          text-align: center;
+          height: 40px;
+          margin: 15px auto 0;
+          background: $gold3;
+          line-height: 30px;
+          vertical-align: middle;
+        }
+
+        @include atMedium {
+          width: 400px;
+          height: 60px;
+          margin: 20px auto 0;
+          background-color: $gold3;
+          vertical-align: middle;
+          line-height: 60px;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    img {
+
+      @include fullHeightNavbar {
+        position: fixed;
+        top: -70%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @include atMedium {
+        margin-top: 70px;
+      }
+
+
+    }
+  }
+
+  &__about-product {
+
+    @include fullHeightNavbar {
+      padding-bottom: 30px;
+    }
+
+    &--hide {
+      display: none;
+    }
+
+    &__heading {
+      margin-bottom: 13px;
+
+      @include atMedium {
+        margin-bottom: 38px;
+      }
+  
+      @include atLarge {
+        margin-bottom: 17px;
+      }
+  
+      @include atLarger {
+        margin-bottom: 38px;
+      }
+    }
+
+    &__detail {
+      text-align: center; 
+    }
+
+    picture {
+
+      img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__features {
+
+    &--hide {
+      display: none;
+    }
+
+    &__heading {
+      margin-bottom: 64px;
+
+      @include fullHeightNavbar {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__features-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+
+      @include atMedium {
+        @include flexBoxRow;
+        justify-content: flex-start;
+      }
+
+      li:last-child {
+
+        @include fullHeightNavbar {
+          margin-bottom: 0;
+          padding-bottom: 64px;
+        }
+      }
+
+      &__item {
+        width: 240px;
+        margin: 0 auto 64px;
+        transform: scale(1);
+        transition: all .3s ease-in-out;
+
+        @include atLarge {
+          margin-bottom: 72px;
+        }
+
+        img {
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto 20px;
+
+          @include fullHeightNavbar {
+            width: 130px;
+            height: 130px;
+          }
+        }
+
+        .feature-heading {
+          @include ralewayMedium;
+          font-size: 18px;
+          margin: 0 0 16px;
+          text-align: center;
+
+          @include atMedium {
+            font-size: 20px;
+          }
+        }
+
+        .feature-detail {
+          @include ralewayLight;
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+
+      &__item:hover {
+
+        @include atLarge {
+          transform: scale(1.13);
+        }
+      }
+    }
+
+  }
+
+  &__tech-specs {
+
+    &--hide {
+      display: none;
+    }
+
+    &__heading {
+      margin-bottom: 64px;
+
+      @include fullHeightNavbar {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__tech-specs-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+
+      @include atMedium {
+        @include flexBoxRow;
+        justify-content: flex-start;
+      }
+
+      li:last-child {
+
+        @include fullHeightNavbar {
+          margin-bottom: 0;
+          padding-bottom: 64px;
+        }
+      }
+
+      &__item {
+        width: 240px;
+        margin: 0 auto 64px;
+        transform: scale(1);
+        transition: all .3s ease-in-out;
+
+        @include atLarge {
+          margin-bottom: 72px;
+        }
+
+        img {
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto 20px;
+
+          @include fullHeightNavbar {
+            width: 130px;
+            height: 130px;
+          }
+        }
+
+        .tech-spec-heading {
+          @include ralewayMedium;
+          font-size: 18px;
+          margin: 0 0 16px;
+          text-align: center;
+
+          @include atMedium {
+            font-size: 20px;
+          }
+        }
+
+        .tech-spec-detail {
+          @include ralewayLight;
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+
+      &__item:hover {
+
+        @include atLarge {
+          transform: scale(1.13);
+        }
+      }
+    }
+
+  }
+}
+
+.section-wrapper {
+  width: 100%;
+
+  &--black {
+    background-color: $backgroundColor;
+    color: #fff;
+  }
+}
+
+.hidden-watch-video {
+  display: none;
+}

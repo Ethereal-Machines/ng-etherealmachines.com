@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="782.325 -13891.576 94.225 97.451">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-4, .cls-6, .cls-7 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-7 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-2 {
+        stroke-width: 0.25px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #111;
+      }
+
+      .cls-4 {
+        stroke-width: 0.2px;
+      }
+
+      .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-6, .cls-9 {
+        fill: none;
+      }
+
+      .cls-6 {
+        stroke-width: 0.75px;
+      }
+
+      .cls-7 {
+        fill: rgba(255,255,255,0.19);
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Estrella_Graphic" transform="translate(162)">
+    <rect id="Rectangle_23195" data-name="Rectangle 23195" class="cls-1" width="93.725" height="14.35" transform="translate(620.575 -13808.725)"/>
+    <rect id="Rectangle_23124" data-name="Rectangle 23124" class="cls-1" width="93.725" height="14.35" transform="translate(620.575 -13872.725)"/>
+    <g id="Group_6332" data-name="Group 6332" transform="translate(0 1)">
+      <path id="Rectangle_8" data-name="Rectangle 8" class="cls-2" d="M0,0H6.47a0,0,0,0,1,0,0V5.111a.2.2,0,0,1-.2.2H.2a.2.2,0,0,1-.2-.2V0A0,0,0,0,1,0,0Z" transform="translate(664.048 -13858.616)"/>
+      <path id="Path_8" data-name="Path 8" d="M76.183,48.7h-.35l-1.16-1.749h2.67Z" transform="translate(589.798 -13900.415)"/>
+      <path id="Path_8578" data-name="Path 8578" d="M76.183,48.7h-.35l-1.16-1.749h2.67Z" transform="translate(593.06 -13900.415)"/>
+    </g>
+    <rect id="Rectangle_23122" data-name="Rectangle 23122" class="cls-3" width="19.775" height="11.123" rx="0.2" transform="translate(657.55 -13806.978)"/>
+    <g id="Rectangle_23125" data-name="Rectangle 23125" class="cls-1" transform="translate(622.577 -13831.078)">
+      <rect class="cls-8" width="89.72" height="1.854"/>
+      <rect class="cls-9" x="0.25" y="0.25" width="89.22" height="1.354"/>
+    </g>
+    <g id="Ellipse_799" data-name="Ellipse 799" class="cls-2" transform="translate(690.65 -13798.943)">
+      <circle class="cls-8" cx="1.545" cy="1.545" r="1.545"/>
+      <circle class="cls-9" cx="1.545" cy="1.545" r="1.42"/>
+    </g>
+    <g id="Rectangle_23186" data-name="Rectangle 23186" class="cls-4" transform="translate(683.212 -13797.398)">
+      <rect class="cls-8" width="3.708" height="1.545" rx="0.2"/>
+      <rect class="cls-9" x="0.1" y="0.1" width="3.508" height="1.345" rx="0.1"/>
+    </g>
+    <g id="Logo" transform="translate(664.904 -13868.217)">
+      <path id="Path_5811" data-name="Path 5811" class="cls-5" d="M0,44.111l.25-.25,1.385,1.38v-.5L.5,43.612l.256-.256.878.874v-.509L1.011,43.1l.254-.253.729.727V46.1Z" transform="translate(0 -41.57)"/>
+      <path id="Path_5812" data-name="Path 5812" class="cls-5" d="M104.3,44.172l-.25-.25-1.385,1.38v-.5l1.133-1.125-.256-.256-.876.875v-.509l.624-.621-.254-.253-.729.727V46.16Z" transform="translate(-99.239 -41.628)"/>
+      <path id="Path_5813" data-name="Path 5813" class="cls-5" d="M78.57,5.126l-.18-.18V.24l.18-.18.18.18V4.948Z" transform="translate(-76.037 -0.06)"/>
+      <path id="Path_5814" data-name="Path 5814" class="cls-5" d="M51.1,18.67v.944l-.474-.472Z" transform="translate(-49.11 -18.113)"/>
+      <path id="Path_5815" data-name="Path 5815" class="cls-5" d="M102.39,18.59l.467.465c-.118.116-.348.363-.467.481Z" transform="translate(-99.316 -18.035)"/>
+    </g>
+    <path id="Path_8586" data-name="Path 8586" class="cls-6" d="M661.1-13872.5c.066-5.4-1.526-18.8-6.5-18.7s-7.3,8.8-7.3,18.7" transform="translate(5)"/>
+    <path id="Subtraction_991" data-name="Subtraction 991" class="cls-7" d="M93.725,50.35H0V0H93.725ZM8.348.213A2.628,2.628,0,0,0,5.722,2.838V47.511a2.628,2.628,0,0,0,2.625,2.625H85.379A2.628,2.628,0,0,0,88,47.511V2.838A2.628,2.628,0,0,0,85.379.213Z" transform="translate(620.575 -13858.725)"/>
+  </g>
+</svg>

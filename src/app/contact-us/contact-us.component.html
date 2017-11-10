@@ -1,0 +1,33 @@
+<div class="contact-us">
+  <div class="contact-us-wrapper wrapper">
+    <h2 class="contact-us__heading section-heading">
+      Get in Touch!
+    </h2>
+    <h3 class="contact-us__sub-heading">
+       {{ tagline }}
+    </h3>
+    <form class="contact-us__form" action="https://formspree.io/info.etherealmachines@gmail.com" method="post">
+      <div class="form-group">
+        <label for="enquiry-nature">Nature of Enquiry</label>
+        <input type="text" class="form-control" id="enquiry-nature" placeholder="Nature of enquiry.." name="typeOfEnquiry" value="{{ natureOfEnquiry }}" required disabled>
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name..." name="userName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email..." name="userEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control form-group__text-area" id="message" rows="8" placeholder="Your message..." type="text" name="message"
+          required></textarea>
+      </div>
+      <button type="submit" class="btn btn-default contact-us__form__submit-btn" value="Send">SUBMIT</button>
+    </form>
+  </div>
+</div>
+
+<!-- Adding footer for the website. -->
+<app-footer></app-footer>

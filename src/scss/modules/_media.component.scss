@@ -1,0 +1,95 @@
+.media {
+  padding-top: 48px;
+
+  &__container {
+    @include flexBoxRow;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 64px 0;
+  }
+
+  &__item {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px 1px #bfbfbf;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0 20px 46px;
+
+    &__img-container {
+      position: relative;
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        height: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: all .2s ease-in;
+
+        a,
+        button {
+          @include robotoRegular;
+          width: 100px;
+          height: 40px;
+          border-radius: 8px;
+          line-height: 28px;
+          vertical-align: middle;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .btn--hidden {
+          display: none;
+        }
+      }
+    }
+
+    &__img-container:hover .overlay {
+      height: 100%;
+    }
+
+    &__detail-container {
+      width: 100%;
+      height: 74px;
+      padding: 3px 16px 8px;
+
+      h4 {
+        @include robotoRegular;
+        padding-top: 5px;
+        font-size: 16px;
+        margin: 0;
+        height: 38px;
+      }
+
+      &__date-publisher {
+
+        .date,
+        .publisher {
+          @include robotoThin;
+          font-size: 12;
+        }
+
+        .date {
+          float: left;
+        }
+
+        .publisher {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+.modal-container--press-release {
+  transition: transform .4s step-start;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: white;
+}

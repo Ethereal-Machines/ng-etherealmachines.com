@@ -1,0 +1,298 @@
+.nav {
+  @include robotoLight;
+  background: #222222;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+
+  &__wrapper {
+    @include flexBoxRow;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    position: relative;
+
+    @include atMedium {
+      justify-content: space-between;
+    }
+  }
+
+  &__header,
+  &__company-name,
+  &__toggle-btn {
+    @include flexBoxRow;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header,
+  &__toggle-btn {
+    width: 15%;
+  }
+
+  &__toggle-btn {
+    font-size: 25px;
+
+    i {
+      transition: color .4s ease;
+    }
+
+    i:hover {
+      color: #a5a5a5;
+    }
+  }
+
+  &__header {
+    @include atMedium {
+      margin-right: 5%;
+    }
+  }
+
+  &__company-name {
+    width: 70%;
+  }
+
+  &__list {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    padding: 0 10px 0;
+    list-style: none;
+    // font-weight: 100;
+    letter-spacing: 1.5px;
+    background: #222222;
+    color: white;
+
+    a {
+      text-decoration: none;
+    }
+
+    .links {
+      color: white;
+      width: 100%;
+      display: inline-block;
+      // font-weight: 400;
+      transition: color .4s ease;
+
+      &-disable {
+
+        @include fullHeightNavbar {
+          // color: #a5a5a5;
+        }
+      }
+    }
+
+    .links:hover {
+      cursor: pointer;
+      text-decoration: none;
+      // color: #a5a5a5;
+      @include robotoMedium;
+    }
+
+    @include fullHeightNavbar {
+      // height: 100vh;
+      height: calc(100vh - 48px);
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+
+    &--active {
+      display: block;
+    }
+
+    @include atMedium {
+      @include flexBoxRow;
+      justify-content: flex-end;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 75%;
+      padding: 0;
+      margin: 0 0 0 5%;
+      height: 48px;
+    }
+
+    &__item {
+      position: relative;
+
+      @include fullHeightNavbar {
+        height: 47px;
+        line-height: 47px;
+        vertical-align: middle;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 20px;
+        // border-top: 1px solid #95989A;
+        border-bottom: 1px solid #95989A;
+
+        &--bottom-border {
+          border-bottom: 1px solid #95989A;
+        }
+
+        &--have-sub-list {
+          height: 188px;
+        }
+
+        &__sub-list {
+          list-style: none;
+          margin-left: -20px;
+          padding: 0px;
+
+          i {
+            margin-right: 12.5px;
+          }
+
+          &__item {
+            @include robotoThin;
+            // font-weight: 100;
+            letter-spacing: 1.5px;
+            color: #FFFFFF;
+            border-bottom: 1px solid #95989A;
+            padding-left: 20px;
+          }
+        }
+      }
+
+      @include atMedium {
+        width: 140px;
+        text-align: center;
+        line-height: 48px;
+        vertical-align: middle;
+      }
+
+      @include atMedium {
+        &--have-sub-list:hover &__sub-list {
+          @include flexBoxRow;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    &__item__sub-list {
+
+      @include fullHeightNavbar {
+        .sub-links {
+          color: white;
+          width: 91%;
+          display: inline-block;
+          // font-weight: 400;
+          transition: color .4s ease;
+        }
+
+        .sub-links:hover {
+          cursor: pointer;
+          text-decoration: none;
+          // color: #a5a5a5;
+          @include robotoMedium;
+        }
+
+      }
+
+      @include atMedium {
+        display: none;
+        // @include flexBoxRow;
+        // justify-content: space-between;
+        // background-color: #222222;
+        background-color:rgba(34, 34, 34, 0.95);
+        color: white;
+        // width: 420px;
+        width: 440px;
+        list-style: none;
+        // padding: 20px 0 0;
+        padding: 0 10px;
+        top: 48px;
+        position: absolute;
+        margin-top: 10px;
+        // right: -140px;
+        right: -150px;
+        border-radius: 10px;
+        box-shadow: 7px 6px 5px -1px rgba(56, 51, 51, 0.54);
+
+        .sub-links {
+          color: white;
+          // font-weight: 400;
+          transition: color .4s ease;
+        }
+
+        .sub-links:hover {
+          cursor: pointer;
+          text-decoration: none;
+          // color: #a5a5a5;
+          @include robotoMedium;
+        }
+
+        .arrow-up {
+          width: 0; 
+          height: 0;
+          position: absolute;
+          top: -10px;
+          // left: 200px;
+          left: 210px;
+          border-left: 11px solid transparent;
+          border-right: 11px solid transparent;
+          border-bottom: 11px solid #222;
+        }
+
+        &__item {
+          @include flexBoxCol;
+          width: 140px;
+          padding: 20px 0 0;
+          margin: 5px 0;
+
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.company-name  {
+  display: inline-block;
+  margin: auto;
+}
+
+.hide-if-not-small {
+  @include flexBoxRow;
+  justify-content: center;
+
+  @include atMedium {
+    display: none;
+  }
+}
+
+.i-hide {
+  @include atMedium {
+    display: none;
+  }
+}
+
+.image-hide {
+  @include fullHeightNavbar {
+    display: none;
+  }
+}
+
+@include fullHeightNavbar {
+  .no-bottom-border {
+    border-bottom: 0px;
+  }
+  
+  .have-top-border {
+    border-top: 1px solid #95989A;
+  }
+}
+
+.active {
+  @include robotoMedium;
+
+  @include atMedium {
+    // background-color: rgb(66, 66, 66);
+    border-bottom: 5px solid $gold3;
+  }
+}

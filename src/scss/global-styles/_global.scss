@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding-bottom: 162px;
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+
+  @include fullHeightNavbar {
+    padding-bottom: 212.3px;
+  }
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.padding-on {
+  padding-bottom: 212.3px;
+
+  @include atMedium {
+    padding-bottom: 162px;
+  }
+}
+
+.padding-off {
+  padding-bottom: 0;
+}
+
+.wrapper {
+  padding: 0 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  @include ralewayRegular;
+  font-size: 24px;
+  margin: 0 0 4px;
+  // padding-top: 13px;
+  padding-top: 30px;
+  text-align: center;
+
+  @include atMedium {
+    font-size: 50px;
+    margin: 0 0 13px;
+    padding-top: 54px;
+  }
+  @include atLarge {
+    font-size: 40px;
+    margin: 0 0 6px;
+    padding-top: 23px;
+  }
+  @include atLarger {
+    font-size: 50px;
+    margin: 0 0 13px;
+    padding-top: 42px;
+  }
+}
+
+.section-text {
+  @include ralewayLight;
+  font-size: 15px;
+
+  @include atMedium {
+    font-size: 20px;
+  }
+  @include atLarge {
+    font-size: 20px;
+  }
+  @include atLarger {
+    font-size: 20px;
+  }
+}
+
+/* Global styles for the 'modal-container' and 'iframe' goes here  */
+
+.modal-container {
+  width: 0px;
+  height: 0px;
+  margin: 0 auto;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: scale(0);
+  transition: transform .4s cubic-bezier(0.19, 1, 0.22, 1);
+
+  &--active-modal {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    z-index: 4000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .cross-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .cross-btn--black {
+    width: 20px;
+    height: 20px;;
+    top: 15px;
+    right: 10px;
+  }
+
+  .cross-btn:hover {
+    cursor: pointer;
+  }
+
+}
+
+iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include fullHeightNavbar {
+    width: 320px;
+    height: 177px;
+  }
+
+  @include atMedium {
+    width: 730px;
+    height: 400px;
+  }
+
+  @include atLarge {
+    width: 1080px;
+    height: 600px;
+  }
+
+  @include atLarger {
+    width: 1200px;
+    height: 667px;
+  }
+}

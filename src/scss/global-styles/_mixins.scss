@@ -1,0 +1,78 @@
+// Defining the break points for the project
+
+// for the smaller devices
+@mixin atSmall {
+  @media screen and (min-width: 320px) {
+    @content;
+  }
+}
+// for the medium devices (e.g.: iPad)
+@mixin atMedium {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+// for the medium size desktops
+@mixin atLarge {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+// for the extra large devices
+@mixin atLarger {
+  @media screen and (min-width: 1201px) {
+    @content;
+  }
+}
+// full height nav-bar
+@mixin fullHeightNavbar {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+// flex-box
+@mixin flexBoxRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flexBoxCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin chivoRegular {
+  font-family: 'ChivoRegular', Fallback, sans-serif;
+}
+
+@mixin robotoThin {
+  font-family: 'RobotoThin', Fallback, sans-serif;
+}
+@mixin robotoRegular {
+  font-family: 'RobotoRegular', Fallback, sans-serif;
+}
+@mixin robotoMedium {
+  font-family: 'RobotoMedium', Fallback, sans-serif;
+}
+@mixin robotoLight {
+  font-family: 'RobotoLight', Fallback, sans-serif;
+}
+@mixin openSansRegular {
+  font-family: 'OpenSansRegular', Fallback, sans-serif;
+}
+@mixin openSansLight {
+  font-family: 'OpenSansLight', Fallback, sans-serif;
+}
+@mixin ralewayLight {
+  font-family: 'RalewayLight', Fallback, sans-serif;
+}
+@mixin ralewayLightItalic {
+  font-family: 'RalewayLightItalic', Fallback, sans-serif;
+}
+@mixin ralewayRegular {
+  font-family: 'RalewayRegular', Fallback, sans-serif;
+}
+@mixin ralewayMedium {
+  font-family: 'RalewayMedium', Fallback, sans-serif;
+}
