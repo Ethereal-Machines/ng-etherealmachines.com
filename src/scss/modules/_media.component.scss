@@ -14,7 +14,6 @@
     height: 300px;
     box-shadow: 0 0 20px 1px #bfbfbf;
     overflow: hidden;
-    overflow-y: scroll;
     margin: 0 20px 46px;
 
     &__img-container {
@@ -85,11 +84,4 @@
       }
     }
   }
-}
-
-.modal-container--press-release {
-  transition: transform .4s step-start;
-  overflow: hidden;
-  overflow-y: scroll;
-  background-color: white;
 }
