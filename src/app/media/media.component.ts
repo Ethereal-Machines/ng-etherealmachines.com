@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-media',
   templateUrl: './media.component.html'
 })
 export class MediaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   public contents: any[] = [{
     imgLink: 'assets/images/media.component.images/press-release.jpg',
@@ -48,16 +48,8 @@ export class MediaComponent implements OnInit {
     this.isModalOpen = false;
   }
 
-  openPressReleaseModal() {
-    this.isPressReleaseModalOpen = true;
-  }
-
-  closePressReleaseModal() {
-    this.isPressReleaseModalOpen = false;
-  }
-
-  disableClick() {
-    this.isPressReleaseModalOpen = true;
+  loadPressRelease() {
+    this.router.navigate(['media/press-release']);
   }
 
   ngOnInit() {
