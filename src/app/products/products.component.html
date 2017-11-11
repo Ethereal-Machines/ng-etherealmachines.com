@@ -55,7 +55,8 @@
         <li class="product__tech-specs__tech-specs-list__item" *ngFor="let techSpec of product.techSpecs">
           <img src="{{ techSpec.techSpecImage }}" alt="{{ techSpec.altNameForImage }}" class="tech-spec-image" width="168" height="168">
           <h3 class="tech-spec-heading">{{ techSpec.techSpecName }}</h3>
-          <p class="tech-spec-detail">{{ techSpec.techSpecDetail }}</p>
+          <p class="tech-spec-detail" [hidden]="techSpec.techSpecName ==='WORK AREA'">{{ techSpec.techSpecDetail }}</p>
+          <p class="tech-spec-detail" [hidden]="techSpec.techSpecName !=='WORK AREA'">150 &Oslash; x 150 mm</p>
         </li>
       </ul>
     </section>
