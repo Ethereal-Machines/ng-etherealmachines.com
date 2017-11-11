@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'products/halo', component: EtherealHaloComponent },
   { path: 'products/pentagram', component: EtherealPentagramComponent },
-  { path: 'products/estrella', component: EtherealEstrellaComponent },
+  { path: 'products/ray', component: EtherealEstrellaComponent },
   { path: 'contact-us/general-queries', component: ContactUsComponent },
   { path: 'contact-us/careers', component: ContactUsComponent },
   { path: 'contact-us/media-enquiries', component: ContactUsComponent },

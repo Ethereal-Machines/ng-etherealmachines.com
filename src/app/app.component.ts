@@ -15,7 +15,7 @@ export class AppComponent {
 
     const currentLocation: string = window.location.pathname;
 
-    if (currentLocation !== '/products/halo' || '/products/pentagram' || '/products/estrella') {
+    if (currentLocation !== '/products/halo' || '/products/pentagram' || '/products/ray') {
       $('.nav__list__item--have-sub-list').removeClass('active');
     }
 
@@ -23,7 +23,7 @@ export class AppComponent {
       $('.nav__list__item--have-sub-list').addClass('active');
     } else if (currentLocation === '/products/pentagram') {
       $('.nav__list__item--have-sub-list').addClass('active');
-    } else if (currentLocation === '/products/estrella') {
+    } else if (currentLocation === '/products/ray') {
       $('.nav__list__item--have-sub-list').addClass('active');
     }
 
