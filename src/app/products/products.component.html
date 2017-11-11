@@ -1,10 +1,10 @@
 <div class="product" *ngFor="let product of products">
   <!-- Video of product will go full width -->
   <header class="product__video-section">
-    <div class="product__video-container">
-      <video loop muted autoplay poster="{{ product.header.firstFrameImage }}" class="product__video-container__video" [ngClass]="{ 'product__video-container__video--for-estrella' : isEstrella }">
+    <div class="product__video-container" [ngClass]="{ 'product__video-container--for-halo' : isHalo, 'product__video-container--for-pentagram' : isPentagram, 'product__video-container--for-estrella' : isEstrella }">
+      <!-- <video loop muted autoplay poster="{{ product.header.firstFrameImage }}" class="product__video-container__video" [ngClass]="{ 'product__video-container__video--for-estrella' : isEstrella }">
         <source src="{{ product.header.productVideoSrc }}" type="video/mp4">
-      </video>
+      </video> -->
     </div>
     <div class="wrapper product__product-heading-container" [ngClass]="{ 'product__product-heading-container--for-estrella' : isEstrella, 'product__product-heading-container--for-pentagram' : isPentagram }">
       <h1 class="product__product-heading-container__heading">{{ product.header.productName }}</h1>
