@@ -62,7 +62,6 @@
     left: 0px;
     padding: 0 10px 0;
     list-style: none;
-    // font-weight: 100;
     letter-spacing: 1.5px;
     background: #222222;
     color: white;
@@ -75,7 +74,6 @@
       color: white;
       width: 100%;
       display: inline-block;
-      // font-weight: 400;
       transition: color .4s ease;
 
       &-disable {
@@ -89,12 +87,10 @@
     .links:hover {
       cursor: pointer;
       text-decoration: none;
-      // color: #a5a5a5;
       @include robotoMedium;
     }
 
     @include fullHeightNavbar {
-      // height: 100vh;
       height: calc(100vh - 48px);
       overflow: hidden;
       overflow-y: scroll;
@@ -126,7 +122,6 @@
         font-size: 12px;
         text-transform: uppercase;
         padding-left: 20px;
-        // border-top: 1px solid #95989A;
         border-bottom: 1px solid #95989A;
 
         &--bottom-border {
@@ -148,7 +143,6 @@
 
           &__item {
             @include robotoThin;
-            // font-weight: 100;
             letter-spacing: 1.5px;
             color: #FFFFFF;
             border-bottom: 1px solid #95989A;
@@ -179,14 +173,12 @@
           color: white;
           width: 91%;
           display: inline-block;
-          // font-weight: 400;
           transition: color .4s ease;
         }
 
         .sub-links:hover {
           cursor: pointer;
           text-decoration: none;
-          // color: #a5a5a5;
           @include robotoMedium;
         }
 
@@ -196,32 +188,26 @@
         display: none;
         // @include flexBoxRow;
         // justify-content: space-between;
-        // background-color: #222222;
         background-color:rgba(34, 34, 34, 0.95);
         color: white;
-        // width: 420px;
         width: 440px;
         list-style: none;
-        // padding: 20px 0 0;
         padding: 0 10px;
         top: 48px;
         position: absolute;
         margin-top: 10px;
-        // right: -140px;
         right: -150px;
         border-radius: 10px;
         box-shadow: 7px 6px 5px -1px rgba(56, 51, 51, 0.54);
 
         .sub-links {
           color: white;
-          // font-weight: 400;
           transition: color .4s ease;
         }
 
         .sub-links:hover {
           cursor: pointer;
           text-decoration: none;
-          // color: #a5a5a5;
           @include robotoMedium;
         }
 
@@ -292,7 +278,6 @@
   @include robotoMedium;
 
   @include atMedium {
-    // background-color: rgb(66, 66, 66);
     border-bottom: 5px solid $gold3;
   }
 }
