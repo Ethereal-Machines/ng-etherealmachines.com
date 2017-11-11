@@ -32,8 +32,6 @@ export class EtherealHaloComponent implements OnInit {
         'The Halo can equip an entire spectrum ranging from the hobbyist to an industry with quick prototyping and manufacturing abilities. A 5-axis printer and a 5-axis CNC Router bundled up into one single affordable machine heralds the future.'
       ],
       pictures: {
-        // defaultImage: 'assets/images/products.component.images/halo-images/halo--larger.svg',
-        // largerSizeImage: 'assets/images/products.component.images/halo-images/halo--larger.svg'
         defaultImage: 'assets/images/products.component.images/halo-images/product-images/halo--small.png',
         smallSizeImage: 'assets/images/products.component.images/halo-images/product-images/halo--small.png',
         mediumSizeImage: 'assets/images/products.component.images/halo-images/product-images/halo--medium.png',

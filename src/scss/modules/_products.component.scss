@@ -64,17 +64,14 @@
     &__heading {
       @include ralewayMedium;
       font-size: 35px;
-      // margin: 0 0 7px;
       margin: 0;
 
       @include atMedium {
         font-size: 45px;
-        // margin: 0 0 11.5px;
       }
 
       @include atLarge {
         font-size: 50px;
-        // margin: 0 0 12px;
       }
     }
 
