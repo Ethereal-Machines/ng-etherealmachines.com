@@ -85,7 +85,7 @@ export class EtherealHaloComponent implements OnInit {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-1.svg',
       altNameForImage: 'Tech Spec Image',
       techSpecName: 'WORK AREA',
-      techSpecDetail: '150 x 150 x 150 mm'
+      techSpecDetail: '150 dia x 150 mm'
     }, {
       techSpecImage: 'assets/images/products.component.images/halo-images/tech-specs/tech-2.svg',
       altNameForImage: 'Tech Spec Image',
