@@ -188,7 +188,10 @@
 
     img:hover {
       cursor: pointer;
-      transform: scale(1.13);
+
+      @include atLarge {
+        transform: scale(1.13);
+      }
     }
   }
 

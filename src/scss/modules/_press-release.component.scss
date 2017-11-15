@@ -22,8 +22,9 @@
     background: url('../assets/images/press-release.component.images/halo-dark.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 320px;
-    height: 178px;
+    background-position: center;
+    width: 300px;
+    height: 167px;
 
     @include atMedium {
       width: 85%;
