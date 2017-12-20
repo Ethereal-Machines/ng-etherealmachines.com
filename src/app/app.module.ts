@@ -14,6 +14,7 @@ import { EtherealEstrellaComponent } from './products/ethereal-estrella/ethereal
 import { HomeComponent } from './home/home.component';
 import { MediaComponent } from './media/media.component';
 import { PressReleaseComponent } from './media/press-release/press-release.component';
+import { ConcretePrinterPressReleaseComponent } from './media/concrete-printer-press-release/concrete-printer-press-release.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
   { path: 'contact-us/become-a-reseller-distributor', component: ContactUsComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'media', component: MediaComponent },
-  { path: 'media/press-release', component: PressReleaseComponent }
+  { path: 'media/press-release', component: PressReleaseComponent },
+  { path: 'media/concrete-printer-press-release', component: ConcretePrinterPressReleaseComponent }
 ];
 @NgModule({
   declarations: [
@@ -41,7 +43,8 @@ const appRoutes: Routes = [
     EtherealEstrellaComponent,
     HomeComponent,
     MediaComponent,
-    PressReleaseComponent
+    PressReleaseComponent,
+    ConcretePrinterPressReleaseComponent
   ],
   imports: [
     BrowserModule,

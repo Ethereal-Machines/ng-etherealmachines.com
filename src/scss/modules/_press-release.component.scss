@@ -17,9 +17,9 @@
     padding-top: 10px;
   }
 
-  &__halo-image {
+  &__product-image {
     margin: 20px auto;
-    background: url('../assets/images/press-release.component.images/halo-dark.svg');
+    // background: url('../assets/images/press-release.component.images/halo-dark.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,6 +30,10 @@
       width: 85%;
       width: 720px;
       height: 400px;
+    }
+
+    &--halo {
+      background: url('../assets/images/press-release.component.images/halo-dark.svg');
     }
   }
 

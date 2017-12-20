@@ -9,7 +9,7 @@
           <div class="overlay">
             <button class="btn btn-primary" [ngClass]="{ 'btn--hidden' : !item.isMediaPlayble }" (click)="openModal()">{{ item.btnTitle }}</button>
             <a href="{{ item.mediaLink }}" target="_blank" class="btn btn-primary" [ngClass]="{  'btn--hidden' : item.isMediaPlayble }">{{ item.btnTitle }}</a>
-            <button class="btn btn-primary" [ngClass]="{ 'btn--hidden' : !item.isPartOfApp }" (click)="loadPressRelease()">{{ item.btnTitle }}</button>
+            <a routerLink="{{ item.mediaLink }}" class="btn btn-primary" [ngClass]="{ 'btn--hidden' : !item.isPartOfApp }">{{ item.btnTitle }}</a>
           </div>
         </div>
         <div class="media__item__detail-container">
