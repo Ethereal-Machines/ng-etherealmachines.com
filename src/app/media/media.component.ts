@@ -9,6 +9,15 @@ export class MediaComponent implements OnInit {
   constructor(private router: Router) { }
 
   public contents: any[] = [{
+    imgLink: 'assets/images/concrete-printer-press-release.component.images/product-image.jpg',
+    mediaLink: '/media/concrete-printer-press-release',
+    btnTitle: 'Learn More',
+    isMediaPlayble: false,
+    isPartOfApp: true,
+    heading: 'Concrete 3D Printer',
+    date: 'December 2017',
+    publisher: 'Ethereal Machines'
+  }, {
     imgLink: 'assets/images/media.component.images/press-release.jpg',
     mediaLink: '/media/press-release',
     btnTitle: 'Learn More',
@@ -20,7 +29,7 @@ export class MediaComponent implements OnInit {
   }, {
     imgLink: 'assets/images/media.component.images/documentry.jpg',
     mediaLink: 'https://youtu.be/6dun2zbYJmc',
-    heading: 'Documentary by Govt.of India',
+    heading: 'Documentary by Govt. of India',
     btnTitle: 'Play',
     isMediaPlayble: true,
     isPartOfApp: false,

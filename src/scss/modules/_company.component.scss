@@ -37,6 +37,14 @@
       text-align: center;
     }
 
+    &__key-people {
+      .key-people {
+        @include flexBoxRow;
+        justify-content: space-around;
+        padding: 40px 0 0;
+      }
+    }
+
     &__logo-container {
       @include flexBoxRow;
       justify-content: center;
