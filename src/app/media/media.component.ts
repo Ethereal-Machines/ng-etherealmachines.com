@@ -8,7 +8,7 @@ export class MediaComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  public contents: any[] = [{
+  public contents: any[] = [/* {
     imgLink: 'assets/images/concrete-printer-press-release.component.images/product-image.jpg',
     mediaLink: '/media/concrete-printer-press-release',
     btnTitle: 'Learn More',
@@ -17,7 +17,8 @@ export class MediaComponent implements OnInit {
     heading: 'Concrete 3D Printer',
     date: 'December 2017',
     publisher: 'Ethereal Machines'
-  }, {
+  },  */
+  {
     imgLink: 'assets/images/media.component.images/press-release.jpg',
     mediaLink: '/media/press-release',
     btnTitle: 'Learn More',
