@@ -25,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'contact-us/careers', component: ContactUsComponent },
   { path: 'contact-us/media-enquiries', component: ContactUsComponent },
   { path: 'contact-us/become-a-reseller-distributor', component: ContactUsComponent },
+  { path: 'contact-us/concrete-3d-printer', component: ContactUsComponent },
   { path: 'company', component: CompanyComponent },
   { path: 'media', component: MediaComponent },
   { path: 'media/press-release', component: PressReleaseComponent },

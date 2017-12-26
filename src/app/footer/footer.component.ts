@@ -27,4 +27,8 @@ export class FooterComponent implements OnInit {
   loadBecomeReseller() {
     this.router.navigate(['contact-us/become-a-reseller-distributor']);
   }
+
+  loadConcretePrinterQuery() {
+    this.router.navigate(['contact-us/concrete-3d-printer']);
+  }
 }
