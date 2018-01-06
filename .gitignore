@@ -27,3 +27,5 @@ nbproject
 .komodotools
 _notes
 dwsync.xml
+*.pyc
+*.py~
