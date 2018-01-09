@@ -144,6 +144,23 @@
         @include ralewayRegular;
         color: white;
         text-shadow: 0px;
+
+        a:link,
+        a:visited {
+          color: white;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: white;
+          text-decoration: underline;
+        }
+
+        a:active {
+          color: white;
+          text-decoration: none;
+        }
+
         @include fullHeightNavbar {
           width: 300px;
           padding: 5px;
