@@ -10,7 +10,7 @@
       <h1 class="product__product-heading-container__heading">{{ product.header.productName }}</h1>
       <hr>
       <h3 class="product__product-heading-container__sub-heading">{{ product.header.productTagLine }}</h3>
-      <h3 class="product__product-heading-container__sub-heading--for-estrella" [hidden]="!isEstrella">{{ product.header.extraLine }}</h3>
+      <h3 class="product__product-heading-container__sub-heading--for-estrella" [hidden]="!isEstrella"><a href="http://store.etherealmachines.com" target="blank">Pre-Order Now!</a></h3>
       <img src="assets/images/products.component.images/halo-images/watch-video.svg" alt="Watch video" height="38" width="166" [ngClass]="{ 'hidden-watch-video' : !isHalo }" (click)="openModal()">
     </div>
   </header>
