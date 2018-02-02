@@ -31,7 +31,7 @@ const appRoutes: Routes = [
   { path: 'media', component: MediaComponent },
   { path: 'media/press-release', component: PressReleaseComponent },
   { path: 'media/concrete-printer-press-release', component: ConcretePrinterPressReleaseComponent },
-  { path: 'media/lalbhai-group-press-release', component: LalbhaiGroupPressReleaseComponent }
+  // { path: 'media/lalbhai-group-press-release', component: LalbhaiGroupPressReleaseComponent }
 ];
 @NgModule({
   declarations: [
