@@ -19,7 +19,7 @@
         <label for="email">E-mail</label>
         <input type="email" class="form-control" id="email" placeholder="Enter your email..." name="userEmail" required>
       </div>
-      <div class="form-group" [hidden]="!showContactNum" [ngClass]="{'hide': !showContactNum}">
+      <div class="form-group" *ngIf="showContactNum">
         <label for="tel">Contact Number</label>
         <input type="number" class="form-control" id="tel" placeholder="Enter your contact number..." name="userContactNum" required>
       </div>
