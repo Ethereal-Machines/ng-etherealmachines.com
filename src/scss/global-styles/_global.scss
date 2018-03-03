@@ -18,6 +18,12 @@ body {
   }
 }
 
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
 a:hover {
   cursor: pointer;
 }
