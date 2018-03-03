@@ -10,6 +10,7 @@ export class ContactUsComponent implements OnInit {
 
   public natureOfEnquiry: string;
   public tagline: string;
+  public showContactNum: boolean = false;
 
   public tagLines = {
     concrete3dPrinter: 'To collaborate with us on Concrete 3d Printing!',
@@ -34,6 +35,7 @@ export class ContactUsComponent implements OnInit {
     } else if (link.indexOf('become-a-reseller-distributor') !== -1) {
       this.natureOfEnquiry = 'Becoming a reseller/distributor';
       this.tagline = this.tagLines.becomeReseller;
+      this.showContactNum = true;
     } else if (link.indexOf('concrete-3d-printer') !== -1) {
       this.natureOfEnquiry = 'Concrete 3d Printing';
       this.tagline = this.tagLines.concrete3dPrinter;
