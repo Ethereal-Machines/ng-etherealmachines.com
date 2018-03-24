@@ -17,7 +17,17 @@ export class MediaComponent implements OnInit {
     heading: 'Press release - The Lalbhai Group',
     date: 'January 2018',
     publisher: 'Ethereal Machines'
-  }, */ {
+  }, */
+  {
+    imgLink: 'assets/images/media.component.images/digital-trends-logo.png',
+      mediaLink: 'https://www.digitaltrends.com/cool-tech/ethereal-machines-halo-3d-printer-ces-2018/',
+    heading: 'Ethereal Machines\' HALO',
+    btnTitle: 'Learn More',
+    isMediaPlayble: false,
+    isPartOfApp: false,
+    date: 'January 2018',
+    publisher: 'DIGITAL TRENDS'
+  }, {
     imgLink: 'assets/images/concrete-printer-press-release.component.images/product-image.jpg',
     mediaLink: '/media/concrete-printer-press-release',
     btnTitle: 'Learn More',
@@ -26,6 +36,15 @@ export class MediaComponent implements OnInit {
     heading: 'Concrete 3D Printer',
     date: 'December 2017',
     publisher: 'Ethereal Machines'
+  }, {
+    imgLink: 'assets/images/media.component.images/gadgets-360-logo.png',
+    mediaLink: 'https://gadgets.ndtv.com/others/features/meet-ethereal-machines-halo-a-5d-printer-thats-just-won-the-best-of-innovation-ces-2018-award-1779765',
+    heading: 'Meet Ethereal Machines\' HALO...',
+    btnTitle: 'Learn More',
+    isMediaPlayble: false,
+    isPartOfApp: false,
+    date: 'November 2017',
+    publisher: 'Gadgets360'
   }, {
     imgLink: 'assets/images/media.component.images/press-release.jpg',
     mediaLink: '/media/press-release',
